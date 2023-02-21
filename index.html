@@ -14,17 +14,21 @@
     <h1 class="calculate__title">Калькулятор зарплаты в Армении</h1>
 </header>
 <main class="calculate__main">
-    <label class="calculate__label" for="grosssalary">Введите зарплату gross</label>
-    <div class="calculate__container">
-        <input class="calculate__input" type="number" id="grosssalary" value="1000000">
-        <button class="calculate__button" type="button" id="calculate" onclick="resultToDiv()">Рассчитать!</button>
+    <div class="calculate__wrapper">
+        <label class="calculate__label" for="grosssalary">Введите зарплату gross</label>
+        <div class="calculate__container">
+            <input class="calculate__input" type="number" id="grosssalary" value="1000000">
+            <button class="calculate__button" type="button" id="calculate" onclick="resultToDiv()">Рассчитать!</button>
+        </div>
+        <div class="calculate__result">Зарплата net: <span class="calculate__netsalary" id="netsalary"></span> драм
+        </div>
     </div>
-    <div class="calculate__result">Зарплата net: <span class="calculate__netsalary" id="netsalary"></span> драм</div>
 </main>
 <footer class="calculate__footer">
     <div class="calculate__footer-container">
         <p class="calculate__footer-text">©2023 | Калькулятор зарплаты</p>
     </div>
+
 </footer>
 </body>
 

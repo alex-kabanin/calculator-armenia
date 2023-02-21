@@ -44,6 +44,14 @@ html {
 .calculate__main {
     flex-grow: 1;
     width: 100%;
+    background-image: url("../img/ararat.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #e5f6fe;
+}
+
+.calculate__wrapper {
     max-width: 1230px;
     margin: 0 auto;
     padding: 80px 15px;
@@ -143,6 +151,10 @@ input::-webkit-inner-spin-button {
 
     .calculate__header {
         padding: 80px 15px
+    }
+
+    .calculate__main {
+        background-image: none;
     }
 }
 
