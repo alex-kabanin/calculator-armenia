@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Guardian Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("GuardianSansRegular.woff") format("woff");
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+.calculate {
+    font-family: 'Guardian Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 320px;
+    margin: 0;
+    color: #232323;
+}
+
+.calculate__header {
+    padding: 100px 15px;
+    background-image: linear-gradient(179.33deg, #D90012 -62.78%, #0033A0 58.93%, #F2A800 146.04%);
+    border-color: #b0b0b0;
+    width: 100%;
+}
+
+.calculate__title {
+    max-width: 1230px;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.calculate__main {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 80px 15px;
+}
+
+.calculate__label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Guardian Sans', sans-serif;
+}
+
+.calculate__container {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.calculate__input {
+    font-family: 'Guardian Sans', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    cursor: text;
+    padding: 6px 12px;
+    margin-right: 30px;
+    outline-offset: 0;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: #707070 1px solid;
+}
+
+.calculate__input:focus {
+    background: rgba(0, 0, 0, .05);
+    outline: #707070 1px solid;
+}
+
+.calculate__button {
+    font-family: 'Guardian Sans', sans-serif;
+    background: linear-gradient(270deg, #0033A0 50%, #2867EE);
+    background-size: 200% 100%;
+    color: #fff;
+    max-width: 360px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    min-width: 160px;
+    outline: none;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.calculate__button:hover {
+    background-position: 100% 0;
+}
+
+.calculate__result {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.calculate__netsalary {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .calculate {
+        width: 100%;
+    }
+
+    .calculate__container {
+        display: block
+    }
+
+    .calculate__input {
+        margin-bottom: 24px
+    }
+
+    .calculate__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .calculate__header {
+        padding: 80px 15px
+    }
+}
+
+.calculate__footer {
+    width: 100%;
+    background: #f5f1ed;
+    padding: 30px 15px;
+}
+
+.calculate__footer-container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.calculate__footer-text {
+    text-align: center;
+    font-size: 14px;
+}
