@@ -84,7 +84,6 @@ html {
 }
 
 .calculate__input:focus {
-    background: rgba(0, 0, 0, .05);
     outline: #707070 1px solid;
 }
 
