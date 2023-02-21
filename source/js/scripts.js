@@ -8,7 +8,7 @@ function getNetSalary(grossSalary) {
     } else {
         socialContribution = grossSalary * 0.05;
     }
-    ;
+
     let stampFee;
     if (grossSalary <= 100000) {
         stampFee = 1500;
