@@ -16,12 +16,10 @@
 <main class="calculate__main">
     <div class="calculate__wrapper">
         <label class="calculate__label" for="grosssalary">Введите зарплату gross</label>
-        <div class="calculate__container">
-            <form action="javascript:resultToDiv()">
+        <form class="calculate__container" action="javascript:resultToDiv()">
             <input class="calculate__input" type="number" id="grosssalary" value="1000000">
             <button class="calculate__button" type="submit" id="calculate" >Рассчитать!</button>
-            </form>
-        </div>
+        </form>
         <div class="calculate__result">Зарплата net: <span class="calculate__netsalary" id="netsalary"></span> драм
         </div>
     </div>
