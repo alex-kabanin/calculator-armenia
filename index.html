@@ -6,15 +6,19 @@
     <title>Калькулятор зарплаты в Армении</title>
     <meta name="description" content="С помощью этой тулзы вы сможете высчитать чистую зарплату в Армении">
     <meta name="keywords" content="Калькулятор зарплат Армения, чистая зп Армения">
+    <link rel="preload" href="source/css/GuardianSansRegular.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico" sizes="32x32"/>
     <link rel="stylesheet" href="source/css/styles.css">
 </head>
 <body class="calculate">
 <header class="calculate__header">
-    <h1 class="calculate__title">Калькулятор зарплаты в Армении</h1>
+    <div class="calculate__wrapper">
+        <h1 class="calculate__title">Калькулятор зарплаты в Армении</h1>
+    </div>
 </header>
 <main class="calculate__main">
-    <div class="calculate__wrapper">
+    <section class="calculate__wrapper">
+        <h2 class="visually-hidden ">Введите в поле зарплату до вычета налогов</h2>
         <label class="calculate__label" for="grosssalary">Введите зарплату gross</label>
         <form class="calculate__container" action="javascript:resultToDiv()">
             <input class="calculate__input" type="number" id="grosssalary" placeholder="1000000">
@@ -22,15 +26,13 @@
         </form>
         <div class="calculate__result">Зарплата net: <span class="calculate__netsalary" id="netsalary">0</span> драм
         </div>
-    </div>
+    </section>
 </main>
 <footer class="calculate__footer">
-    <div class="calculate__footer-wrapper">
+    <div class="calculate__wrapper">
         <p class="calculate__footer-text">©2023 | Калькулятор зарплаты</p>
     </div>
-
 </footer>
 </body>
-
 <script src="source/js/scripts.js"></script>
 </html>

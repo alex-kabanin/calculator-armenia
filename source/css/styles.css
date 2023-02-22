@@ -33,9 +33,9 @@ html {
     width: 100%;
 }
 
+
 .calculate__title {
-    max-width: 1230px;
-    margin: 0 auto;
+    margin: 0;
     font-size: 50px;
     line-height: 60px;
     color: #fff;
@@ -49,12 +49,13 @@ html {
     background-position: 50% 50%;
     background-size: cover;
     background-color: #e5f6fe;
+    padding: 80px 15px;
 }
 
 .calculate__wrapper {
-    max-width: 1230px;
+    max-width: 1260px;
     margin: 0 auto;
-    padding: 80px 15px;
+
 }
 
 .calculate__label {
@@ -130,6 +131,29 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
 }
 
+.calculate__footer {
+    width: 100%;
+    background: #f5f1ed;
+    padding: 30px 15px;
+}
+
+
+.calculate__footer-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 @media (max-width: 767px) {
     .calculate {
         width: 100%;
@@ -152,23 +176,4 @@ input::-webkit-inner-spin-button {
         padding: 80px 15px
     }
 
-    .calculate__main {
-        background-image: none;
-    }
-}
-
-.calculate__footer {
-    width: 100%;
-    background: #f5f1ed;
-    padding: 30px 15px;
-}
-
-.calculate__footer-wrapper {
-    max-width: 1260px;
-    margin: 0 auto;
-}
-
-.calculate__footer-text {
-    text-align: center;
-    font-size: 14px;
 }
