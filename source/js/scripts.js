@@ -34,8 +34,6 @@ input.onchange = function () {
 };
 grossSalary = input.value;
 
-document.getElementById("netsalary").innerHTML = getNetSalary(grossSalary);
-
 function resultToDiv() {
     document.getElementById("netsalary").innerHTML = Math.floor(getNetSalary(grossSalary));
 }
