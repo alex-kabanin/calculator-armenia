@@ -90,13 +90,13 @@ html {
 
 .calculate__button {
     font-family: 'Guardian Sans', sans-serif;
-    background: linear-gradient(270deg, #0033A0 50%, #2867EE);
+    background: #003fc7;
     background-size: 200% 100%;
     color: #fff;
     max-width: 360px;
     -webkit-appearance: none;
     appearance: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -119,7 +119,15 @@ input::-webkit-inner-spin-button {
 }
 
 .calculate__button:hover {
-    background-position: 100% 0;
+    background: #102f95;
+}
+
+.calculate__button:focus-visible {
+    background: #102f95;
+}
+
+.calculate__button:active {
+    background: #00184a;
 }
 
 .calculate__result {
