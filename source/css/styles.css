@@ -65,7 +65,7 @@ html {
     font-family: 'Guardian Sans', sans-serif;
 }
 
-.calculate__container {
+.calculate__form {
     display: flex;
     margin-bottom: 32px;
 }
@@ -159,7 +159,7 @@ input::-webkit-inner-spin-button {
         width: 100%;
     }
 
-    .calculate__container {
+    .calculate__form {
         display: block
     }
 
