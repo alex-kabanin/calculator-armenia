@@ -163,7 +163,7 @@ input::-webkit-inner-spin-button {
     padding: 30px 15px;
 }
 
-.calculate__footer-container {
+.calculate__footer-wrapper {
     max-width: 1260px;
     margin: 0 auto;
 }
